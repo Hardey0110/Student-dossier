@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eef6ff, #dfeeff);
+  color: #1d1d1d;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+h1 {
+  margin: 0;
+  color: #0b3d91;
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: 1px solid #d6e3ff;
+  border-radius: 12px;
+  padding: 20px 18px 15px;
+  margin-bottom: 20px;
+  background: #f9fbff;
+}
+
+legend {
+  font-weight: bold;
+  color: #0a4f9c;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #243b53;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #b7c9e6;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #3a7bd5;
+  box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.15);
+}
+
+p {
+  margin: 18px 0 10px;
+  font-weight: 600;
+  color: #243b53;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+  accent-color: #0b3d91;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin: 0 18px 0 0;
+  font-weight: normal;
+  color: #2e3d4f;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #0b3d91, #3a7bd5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(11, 61, 145, 0.25);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px 30px;
+  color: #4d5b6b;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 18px 16px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  input[type="radio"] + label {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
